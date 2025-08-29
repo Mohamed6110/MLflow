@@ -1,4 +1,4 @@
-📊 MLflow Project
+##📊 MLflow Project
 
 This repository contains an MLflow project for managing the full machine learning lifecycle, including experimentation, reproducibility, and deployment.
 
@@ -14,7 +14,7 @@ Parameterized training
 
 Logging of metrics, artifacts, and models
 
-📂 Project Structure
+##📂 Project Structure
 .
 ├── MLproject              # MLflow project definition
 ├── conda.yaml             # Conda environment for reproducibility
@@ -26,7 +26,7 @@ Logging of metrics, artifacts, and models
 
 ⚙️ Requirements
 
-Python 3.8+
+Python 3.10+
 
 MLflow
 
@@ -37,28 +37,7 @@ Install dependencies:
 pip install mlflow
 
 
-or
-
-conda env create -f conda.yaml
-conda activate mlflow-env
-
-▶️ Running the Project
-
-Run with default parameters:
-
-mlflow run .
-
-
-Run with custom parameters:
-
-mlflow run . -P alpha=0.5 -P l1_ratio=0.1
-
-
-Run remotely (e.g., GitHub repo):
-
-mlflow run git@github.com:username/mlflow-project.git
-
-📊 Tracking Experiments
+##📊 Tracking Experiments
 
 Start the MLflow tracking UI:
 
@@ -67,7 +46,7 @@ mlflow ui
 
 Open in browser: http://localhost:5000
 
-📦 Saving and Loading Models
+##📦 Saving and Loading Models
 
 Train and log model:
 
@@ -79,7 +58,7 @@ Load model for inference:
 
 model = mlflow.sklearn.load_model("runs:/<run_id>/model")
 
-🚀 Deployment
+##🚀 Deployment
 
 Export model for serving:
 
