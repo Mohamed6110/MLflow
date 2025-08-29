@@ -15,7 +15,7 @@ if __name__ =="__main__":
 
     _,X_test,_,y_test=train_test_split(x,y,test_size=0.2,random_state=42)
 
-    model_url="file:///F:/playing/flask_mlflow/mlruns/183401935329498046/models/m-f004fb08f5a9494e89f94cb389a9883b/artifacts/model.pkl"
+    model_url="/model.pkl"
     rfc=mlflow.sklearn.load_model(model_url)
     y_pred=rfc.predict(X_test)
     y_pred=pd.DataFrame(y_pred,coloums=["prediction"])
