@@ -24,10 +24,10 @@ Logging of metrics, artifacts, and models
 ├── models/                # Saved models
 └── README.md              # Project documentation
 
-⚙️ Requirements
+## Requirements
 
 Python 3.10+
-
+sklearn 
 MLflow
 
 Conda or virtualenv
